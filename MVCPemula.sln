@@ -5,6 +5,12 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCPemula", "MVCPemula\MVCPemula.csproj", "{E149E236-DA42-4380-9C59-5CB89D9AFD25}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PengelolaanPegawai.Web", "PengelolaanPegawai.Web\PengelolaanPegawai.Web.csproj", "{7682303B-BF0D-4FD7-B540-098B26B3C9EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MVCPerkenalan", "MVCPerkenalan", "{7A0CEFDD-2B78-45B0-B43C-3928E3B341EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PengelolaanPegawai", "PengelolaanPegawai", "{E2B9A322-13D0-41F9-AACC-D5917400860C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +21,16 @@ Global
 		{E149E236-DA42-4380-9C59-5CB89D9AFD25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E149E236-DA42-4380-9C59-5CB89D9AFD25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E149E236-DA42-4380-9C59-5CB89D9AFD25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7682303B-BF0D-4FD7-B540-098B26B3C9EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7682303B-BF0D-4FD7-B540-098B26B3C9EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7682303B-BF0D-4FD7-B540-098B26B3C9EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7682303B-BF0D-4FD7-B540-098B26B3C9EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E149E236-DA42-4380-9C59-5CB89D9AFD25} = {7A0CEFDD-2B78-45B0-B43C-3928E3B341EB}
+		{7682303B-BF0D-4FD7-B540-098B26B3C9EC} = {E2B9A322-13D0-41F9-AACC-D5917400860C}
 	EndGlobalSection
 EndGlobal
