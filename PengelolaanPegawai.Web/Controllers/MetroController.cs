@@ -34,5 +34,10 @@ namespace PengelolaanPegawai.Web.Controllers
             return View();
         }
 
+        public ActionResult Latihan()
+        {
+            return View();
+        }
+
     }
 }
