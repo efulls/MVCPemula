@@ -128,6 +128,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DivisisController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MetroController.cs" />
     <Compile Include="Global.asax.cs">
@@ -185,6 +186,11 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Metro\Latihan.cshtml" />
     <Content Include="Views\Metro\Formsx.cshtml" />
+    <Content Include="Views\Divisis\Create.cshtml" />
+    <Content Include="Views\Divisis\Delete.cshtml" />
+    <Content Include="Views\Divisis\Details.cshtml" />
+    <Content Include="Views\Divisis\Edit.cshtml" />
+    <Content Include="Views\Divisis\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -197,10 +203,6 @@
     <Folder Include="Assets\font\" />
     <Folder Include="Assets\img\" />
     <Folder Include="Assets\js\" />
-    <Folder Include="css\" />
-    <Folder Include="font\" />
-    <Folder Include="img\" />
-    <Folder Include="js\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
