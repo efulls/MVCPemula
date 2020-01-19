@@ -9,47 +9,75 @@
             </div>
         </div>
         <div class="box-content">
-            @using (Html.BeginForm("Latihan", "Metro", FormMethod.Post, new { @class = "form-horizontal" }))
-            {
-            <fieldset>
-                <div class="control-group">
-                    @Html.Label("TextBoxNama", "Nama", new { @class = "control-label" })
-                    <div class="controls">
-                        @Html.TextBox("TextBoxNama", "", new { @class = "span6 typeahead" })
-                    </div>
-                </div>
+                    @using (Html.BeginForm("Latihan", "Metro", FormMethod.Post, new { @class = "form-horizontal" }))
+                    {
+                        <fieldset>
+                            <div class="control-group">
+                                @Html.Label("TextBoxNama", "Nama", new { @class = "control-label" })
+                                <div class="controls">
+                                    @Html.TextBox("TextBoxNama", "", new { @class = "span6 typeahead" })
+                                </div>
+                            </div>
 
-                <div class="control-group">
-                    @Html.Label("TextAreaAlamat", "Alamat", new { @class = "control-label" })
-                    <div class="controls">
-                        @*@Html.TextArea("TextAreaAlamat", String.Empty, new { @rows = "5", @class = "span6 typeahead" })*@
-                        @Html.TextArea("TextAreaAlamat", String.Empty, new { @class = "cleditor" })
-                    </div>
-                </div>
+                            <div class="control-group">
+                                @Html.Label("TextAreaAlamat", "Alamat", new { @class = "control-label" })
+                                <div class="controls">
+                                    @*@Html.TextArea("TextAreaAlamat", String.Empty, new { @rows = "5", @class = "span6 typeahead" })*@
+                                    @Html.TextArea("TextAreaAlamat", String.Empty, new { @class = "cleditor" })
+                                </div>
+                            </div>
 
-                <div class="control-group">
-                    @Html.Label("DropDownListPropinsi", "Propinsi", new { @class = "control-label" })
-                    <div class="controls">
-                        @Html.DropDownList("DropDownListPropinsi",
+                            <div class="control-group">
+                                @Html.Label("DropDownListPropinsi", "Propinsi", new { @class = "control-label" })
+                                <div class="controls">
+                                    @Html.DropDownList("DropDownListPropinsi",
                             new SelectList(new List<Object> {
                                 new { value = "KALSEL", text ="Kalimantan Selatan" },
                                 new { value = "JABAR", text ="Jawa Barat" }
                         }, "value", "text", 2), "Pilih Propinsi", new { @data_rel = "chosen" })
-                    </div>
-                </div>
+                                </div>
+                            </div>
 
-                <div class="control-group">
-                    @Html.Label("RadioButtonJenisKelamin", "Gender", new { @class = "control-label" })
-                    <div class="controls">
-                        @Html.RadioButton("RadioButtonJenisKelamin", "Laki-laki") Laki-Laki
-                    </div>
-                    <div class="controls">
-                        @Html.RadioButton("RadioButtonJenisKelamin", "Wanita") Wanita
-                    </div>
-                </div>
+                            <div class="control-group">
+                                @Html.Label("RadioButtonJenisKelamin", "Gender", new { @class = "control-label" })
+                                <div class="controls">
+                                    <label class="radio">
+                                        @Html.RadioButton("RadioButtonJenisKelamin", "Laki-laki", new { @id = "JenisKelamin1" })
+                                        @*<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">*@
+                                        Laki - Laki
+                                    </label>
+                                    <div style="clear:both"></div>
+                                    <label class="radio">
+                                        @Html.RadioButton("RadioButtonJenisKelamin", "Perempuan", new { @id = "JenisKelamin2" })
+                                        @*<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">*@
+                                        Perempuan
+                                    </label>
+                                </div>
+                            </div>
 
-            </fieldset>
-            }
+                            <div class="control-group">
+                                @Html.Label("Bahasa", "Bahasa", new { @class = "control-label" })
+                                <div class="controls">
+                                    @Html.CheckBox("CheckBoxBahasaCSharp") C#
+                                    @Html.CheckBox("CheckBoxBahasaJava") Java
+                                    @Html.CheckBox("CheckBoxBahasaPhyton") Python
+                                </div>
+                            </div>
+
+                            <div class="control-group">
+                                @Html.Label("ListBoxPekerjaan", "Pekerjaan", new { @class = "control-label" })
+                                <div class="controls">
+                                    @Html.ListBox("ListBoxPekerjaan", new SelectList(new List<Object> {
+                                        new { value = "1", text = "Programmer" },
+                                        new { value = "2", text = "Analis Sistem" },
+                                        new { value = "3", text = "Administrator Database" },
+                                        new { value = "4", text = "Manajer Proyek" },
+                                    }, "value", "text", 2), new { @multiple="multiple", @data_rel = "chosen" })
+                                </div>
+                            </div>
+
+                        </fieldset>
+                    }
         </div>
     </div><!--/span-->
 </div><!--/row-->
